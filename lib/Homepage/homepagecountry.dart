@@ -13,7 +13,8 @@ class homepagecountry extends StatelessWidget {
         title: Text("All Countries"),
       ),
       body: SafeArea(
-        child: ListView.builder(
+          child: Obx(
+        () => ListView.builder(
           itemCount: ctx.countryname.length,
           itemBuilder: (BuildContext context, int index) {
             return ctx.countryname.length == null
@@ -49,7 +50,7 @@ class homepagecountry extends StatelessWidget {
                   );
           },
         ),
-      ),
+      )),
     );
   }
 }
