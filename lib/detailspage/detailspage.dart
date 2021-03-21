@@ -7,7 +7,14 @@ class detailspage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios),
+            onPressed: () {
+              Navigator.pop(context);
+              FocusScope.of(context).unfocus();
+            }),
+      ),
       body: Center(
         child: ListView(
           children: [

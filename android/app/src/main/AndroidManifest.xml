@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.firsttry">
+    package="com.example.FlutterApplication">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="firsttry"
+        android:label="Countries"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
